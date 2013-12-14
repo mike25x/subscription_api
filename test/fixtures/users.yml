@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  app_id: 1
+  email: MyText
+  password_hash: MyText
+  password_salt: MyText
+  last_login: 2013-12-14 13:53:52
+
+two:
+  app_id: 1
+  email: MyText
+  password_hash: MyText
+  password_salt: MyText
+  last_login: 2013-12-14 13:53:52
