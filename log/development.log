@@ -421,3 +421,76 @@ Migrating to CreateSubscriptions (20131214195840)
   [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-14 14:00:30 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ApiController#index as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-14 14:00:31 -0600
+Processing by ApiController#index as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-14 14:00:32 -0600
+Processing by ApiController#index as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-14 14:00:32 -0600
+Processing by ApiController#index as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (34.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (82.3ms)[0m  [1mINSERT INTO `apps` (`created_at`, `name`, `updated_at`) VALUES ('2013-12-14 20:09:56', 'Calculos en linea', '2013-12-14 20:09:56')[0m
+  [1m[35m (41.7ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `apps` (`created_at`, `name`, `updated_at`) VALUES ('2013-12-14 20:10:40', 'Calculos en linea', '2013-12-14 20:10:40')[0m
+  [1m[35m (17.6ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mApp Load (80.3ms)[0m  SELECT `apps`.* FROM `apps` WHERE `apps`.`name` = 'Calculos end linea'
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mApp Load (0.2ms)[0m  SELECT `apps`.* FROM `apps` WHERE `apps`.`name` = 'Calculos end linea'
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mApp Load (0.3ms)[0m  SELECT `apps`.* FROM `apps` WHERE `apps`.`name` = 'Calculos end linea'
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mApp Load (0.3ms)[0m  SELECT `apps`.* FROM `apps` WHERE `apps`.`name` = 'Calculos end linea'
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mApp Load (0.4ms)[0m  SELECT `apps`.* FROM `apps` WHERE `apps`.`name` = 'Calculos end linea' ORDER BY `apps`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `apps` (`created_at`, `name`, `updated_at`) VALUES ('2013-12-14 20:27:06', 'Calculos end linea', '2013-12-14 20:27:06')
+  [1m[36m (23.6ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mApp Load (0.3ms)[0m  SELECT `apps`.* FROM `apps` WHERE `apps`.`name` = 'Calculos end linea' ORDER BY `apps`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `subscription_types` (`app_id`, `created_at`, `name`, `updated_at`) VALUES (3, '2013-12-14 20:27:43', 'NSS y Patrones', '2013-12-14 20:27:43')
+  [1m[36m (68.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `subscription_types` (`app_id`, `created_at`, `name`, `updated_at`) VALUES (3, '2013-12-14 20:27:44', 'ISPT', '2013-12-14 20:27:44')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `subscription_types` (`app_id`, `created_at`, `name`, `updated_at`) VALUES (3, '2013-12-14 20:27:44', 'Finiquito', '2013-12-14 20:27:44')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (9.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mApp Load (40.1ms)[0m  SELECT `apps`.* FROM `apps` WHERE `apps`.`name` = 'Calculos end linea' ORDER BY `apps`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (64.3ms)[0m  INSERT INTO `subscription_types` (`app_id`, `created_at`, `duration`, `name`, `updated_at`) VALUES (3, '2013-12-14 20:42:57', 360, 'NSS y Patrones', '2013-12-14 20:42:57')
+  [1m[36m (44.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `subscription_types` (`app_id`, `created_at`, `duration`, `name`, `updated_at`) VALUES (3, '2013-12-14 20:42:57', 360, 'ISPT', '2013-12-14 20:42:57')[0m
+  [1m[35m (17.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `subscription_types` (`app_id`, `created_at`, `duration`, `name`, `updated_at`) VALUES (3, '2013-12-14 20:42:57', 360, 'Finiquito', '2013-12-14 20:42:57')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m

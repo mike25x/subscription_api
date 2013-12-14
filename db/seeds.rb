@@ -1,7 +1,15 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+app_name =  "Calculos end linea"
+app = App.where(name:app_name).first
+
+unless app
+	app = App.create(name:app_name)
+end
+
+
+
+SubscriptionType.create(app_id:app.id,duration:360,name:"NSS y Patrones")
+SubscriptionType.create(app_id:app.id,duration:360,name:"ISPT")
+SubscriptionType.create(app_id:app.id,duration:360,name:"Finiquito")
+
