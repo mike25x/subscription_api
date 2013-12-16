@@ -5,6 +5,16 @@ SubscriptionApi::Application.routes.draw do
   # You can have the root of your site routed with "root"
    root 'api#index'
 
+   
+   get '/api/all_subscriptions' => "api#all_subscriptions"
+   get '/api/get_subscription' => "api#get_subscription"
+   get '/api/password_reset' => "api#password_reset"
+   get '/api/confirmation_email/:confirmation_hash' => "api#confirmation_email"
+
+
+   post '/api/add_subscription' => "api#add_subscription"
+   
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

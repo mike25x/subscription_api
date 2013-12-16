@@ -494,3 +494,185 @@ Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
   [1m[35mSQL (0.4ms)[0m  INSERT INTO `subscription_types` (`app_id`, `created_at`, `duration`, `name`, `updated_at`) VALUES (3, '2013-12-14 20:42:57', 360, 'Finiquito', '2013-12-14 20:42:57')
   [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-14 14:46:42 -0600
+Processing by ApiController#index as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-16 14:01:51 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (54.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ApiController#index as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 90ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/add_subscription" for 127.0.0.1 at 2013-12-16 14:05:51 -0600
+
+SyntaxError (/Users/mike25x/Documents/Projects/subscription_api/app/controllers/api_controller.rb:9: syntax error, unexpected =>
+		render json: => {status:"ok"}
+		               ^):
+  activesupport (4.0.0) lib/active_support/dependencies.rb:423:in `load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:423:in `block in load_file'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:615:in `new_constants_in'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:422:in `load_file'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:323:in `require_or_load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:462:in `load_missing_constant'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:183:in `const_missing'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:534:in `get'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:565:in `constantize'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1305712310724230306__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.4ms)
+
+
+Started GET "/api/add_subscription" for 127.0.0.1 at 2013-12-16 14:06:08 -0600
+Processing by ApiController#add_subscription as HTML
+Completed 500 Internal Server Error in 32ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/api_controller.rb:8:in `add_subscription'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.4ms)
+
+
+Started GET "/api/add_subscription" for 127.0.0.1 at 2013-12-16 14:07:03 -0600
+Processing by ApiController#add_subscription as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/add_subscription" for 127.0.0.1 at 2013-12-16 14:07:39 -0600
+Processing by ApiController#add_subscription as HTML
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/add_subscription" for 127.0.0.1 at 2013-12-16 14:08:22 -0600
+Processing by ApiController#add_subscription as HTML
+Completed 500 Internal Server Error in 7ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/api_controller.rb:8:in `add_subscription'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.9ms)
+
+
+Started GET "/api/add_subscription" for 127.0.0.1 at 2013-12-16 14:12:05 -0600
+Processing by ApiController#add_subscription as HTML
+Completed 400 Bad Request in 2ms
+
+ActionController::ParameterMissing (param not found: user):
+  app/controllers/api_controller.rb:15:in `subscription_params'
+  app/controllers/api_controller.rb:8:in `add_subscription'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.3ms)
+
+
+Started GET "/api/add_subscription" for 127.0.0.1 at 2013-12-16 14:12:07 -0600
+Processing by ApiController#add_subscription as HTML
+Completed 400 Bad Request in 1ms
+
+ActionController::ParameterMissing (param not found: user):
+  app/controllers/api_controller.rb:15:in `subscription_params'
+  app/controllers/api_controller.rb:8:in `add_subscription'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.6ms)
+
+
+Started GET "/api/add_subscription" for 127.0.0.1 at 2013-12-16 14:13:26 -0600
+Processing by ApiController#add_subscription as HTML
+Completed 400 Bad Request in 2ms
+
+ActionController::ParameterMissing (param not found: subcription):
+  app/controllers/api_controller.rb:15:in `subscription_params'
+  app/controllers/api_controller.rb:8:in `add_subscription'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.5ms)
+
+
+Started GET "/api/add_subscription" for 127.0.0.1 at 2013-12-16 14:13:37 -0600
+Processing by ApiController#add_subscription as HTML
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 2.6ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddConfirmationHashToUser (20131216205329)
+  [1m[35m (314.1ms)[0m  ALTER TABLE `users` ADD `confirmation_hash` text
+  [1m[36m (238.2ms)[0m  [1mALTER TABLE `users` ADD `activate` tinyint(1)[0m
+  [1m[35m (29.9ms)[0m  BEGIN
+  [1m[36mSQL (42.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20131216205329')[0m
+  [1m[35m (3.8ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
