@@ -6,6 +6,7 @@ gem 'rails', '4.0.0'
 
 gem 'httparty','0.11.0'
 gem 'mysql2','0.3.13'
+gem "bugsnag"
 
 
 # Use SCSS for stylesheets
