@@ -6,6 +6,9 @@ class ApiController < ApplicationController
 		render :text => "<b>status:</b><label style='color:blue'> up and running</label>"
 	end
 
+	def generate_error
+	end
+
 	def add_subscription
 		new_subscription = Subscription.new(subscription_params)
 		previous_subscription = Subscription.find_by(user_id:new_subscription.user_id,subscription_type_id:new_subscription.subscription_type_id)
