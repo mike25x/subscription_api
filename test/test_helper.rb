@@ -12,4 +12,14 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+
+  def assert_json(name,compare)
+    response = ActiveSupport::JSON.decode @response.body
+    assert_equal response[name],compare
+  end
+
+  def get_json
+  	response = ActiveSupport::JSON.decode @response.body
+  	return response
+  end
 end

@@ -38,6 +38,11 @@ GEM
     coffee-script-source (1.6.3)
     erubis (2.7.0)
     execjs (2.0.2)
+    factory_girl (4.3.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.3.0)
+      factory_girl (~> 4.3.0)
+      railties (>= 3.0.0)
     hike (1.2.3)
     httparty (0.11.0)
       multi_json (~> 1.0)
@@ -116,6 +121,7 @@ PLATFORMS
 DEPENDENCIES
   bcrypt-ruby (= 3.1.2)
   coffee-rails (~> 4.0.0)
+  factory_girl_rails (= 4.3.0)
   httparty (= 0.11.0)
   jbuilder (~> 1.2)
   jquery-rails
